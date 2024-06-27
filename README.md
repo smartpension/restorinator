@@ -1,5 +1,6 @@
 # restorinator
 
+A tool for restoring AWS RDS Parquet S3 exports to any SQL database (although only really tested with MySQL and SQLite)
 
 ## Installation
 
