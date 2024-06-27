@@ -1,0 +1,37 @@
+[project]
+name = "restorinator"
+
+version = "0.1"
+
+authors = [
+    { name="Jasim Basheer", email="jasim.basheer@smartpension.co.uk" },
+    { name="Pete Brar", email="pete.brar@smartpension.co.uk" }
+]
+
+description = "Restores AWS RDS Parquet S3 exports"
+
+readme = "README.md"
+
+requires-python = ">=3.9"
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+    'boto3~=1.34',
+    'SQLAlchemy<2.0',
+    'pandas<2.2',
+    'pyarrow~=16.1',
+    'PyMySQL~=1.1.1'
+]
+
+[project.scripts]
+restorinator = "restorinator.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/smartpension/restorinator"
+Issues = "https://github.com/smartpension/restorinator/issues"
+
