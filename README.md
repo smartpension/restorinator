@@ -2,6 +2,8 @@
 
 A tool for restoring AWS RDS Parquet S3 exports to any SQL database (although only really tested with MySQL and SQLite)
 
+It's almost certainly better to use DMS in most situations though https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Source.S3.html#CHAP_Source.S3.Parquet
+
 ## Installation
 
 You can pip install directly from git
